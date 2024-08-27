@@ -11,11 +11,11 @@ use clap::Parser;
 
 pub struct Args {
     #[arg(
-        short = 'f',
-        long = "file-name",
-        help = "Name of the markdown file to generate the table of contents for",
-        default_value = "README.md",
+        short = 'd',
+        long = "directory",
+        help = "Directory to search for markdown files",
+        default_value = ".",
         required = false
     )]
-    pub file_name: String,
+    pub directory: String,
 }

@@ -17,12 +17,12 @@ use std::path::Path;
 
 fn main() -> io::Result<()> {
     // Parse command-line arguments
-    // let args = Args::parse();
+    let args = Args::parse();
 
     // Find markdown files in all the repo
-    let markdown_files = find_markdown_files(Path::new("."));
+    let markdown_files = find_markdown_files(Path::new(&args.directory));
 
-    for markdown_file in markdown_files {
+    for markdown_file in &markdown_files {
         // Read the original file content
         let contents = read_markdown_file(markdown_file.as_str())?;
 
@@ -41,6 +41,10 @@ fn main() -> io::Result<()> {
         file.write_all(updated_content.as_bytes())?;
 
         eprintln!("{} {}", "Updated markdown file ".green(), markdown_file);
+    }
+
+    if markdown_files.is_empty() {
+        eprintln!("{}", "No markdown files found in the given directory".red());
     }
 
     Ok(())
