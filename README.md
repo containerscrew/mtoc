@@ -56,13 +56,13 @@ I'm very supper fan of [doctoc]() and I use it a lot, but I wanted to create a s
 ## Install latest version
 
 ```shell
-curl --proto '=https' --tlsv1.2 -sSfL https://raw.githubusercontent.com/containerscrew/gitrack/main/install.sh | sh
+XXXXX
 ```
 
 ## Install specific release
 
 ```shell
-curl --proto '=https' --tlsv1.2 -sSfL https://raw.githubusercontent.com/containerscrew/gitrack/main/install.sh | sh -s -- -v "v0.8.0"
+XXXXX
 ```
 
 ## Using cargo
@@ -72,15 +72,15 @@ curl --proto '=https' --tlsv1.2 -sSfL https://raw.githubusercontent.com/containe
 Open a terminal and run:
 
 ```shell
-git clone https://github.com/containerscrew/gitrack
-cd gitrack
+git clone https://github.com/containerscrew/mtoc
+cd mtoc
 make install
 ```
 
 # Uninstall
 
 ```bash
-sudo rm /usr/local/bin/gitrack
+sudo rm /usr/local/bin/mtoc
 ```
 
 With cargo:
