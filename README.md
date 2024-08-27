@@ -1,24 +1,3 @@
-<!-- START OF TOC !DO NOT EDIT THIS CONTENT MANUALLY-->
-**Table of Contents**  *generated with [mtoc](https://github.com/containerscrew/mtoc)*
-- [Introduction](#introduction)
-- [Badges](#badges)
-- [Supported Platforms](#supported-platforms)
-- [Installation](#installation)
-  - [Install latest version](#install-latest-version)
-  - [Install specific release](#install-specific-release)
-  - [Using cargo](#using-cargo)
-- [Uninstall](#uninstall)
-- [Usage](#usage)
-  - [Help](#help)
-  - [Generate TOC](#generate-toc)
-  - [Generate TOC for a specific directory](#generate-toc-for-a-specific-directory)
-- [Local development](#local-development)
-- [Or run once](#or-run-once)
-- [TODO](#todo)
-- [License](#license)
-<!-- END OF TOC -->
-
-
 <p align="center" >
     <img src="logo.png" alt="logo" width="250"/>
     <h3 align="center">mtoc 📄</h3>
@@ -29,7 +8,6 @@
 # Introduction
 
 I'm very supper fan of [doctoc]() and I use it a lot, but I wanted to create a similar tool in Rust, so I created this project.
-
 
 # Badges
 
@@ -134,7 +112,7 @@ pre-commit run -a
 
 # TODO
 
-* Implement git commit scan for sensitive data using regex. Just for fun. Like gitleaks does.
+* When generate the TOC, respect the content above the TOC.
 
 
 # License
