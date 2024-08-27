@@ -20,7 +20,7 @@ pub fn insert_toc(original_content: &str, toc: &str) -> String {
 
     // Insert the new TOC
     new_content.push_str(toc);
-    new_content.push_str("\n");
+    new_content.push('\n');
 
     // Add the remaining content
     new_content.push_str(original_content);

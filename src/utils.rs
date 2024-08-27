@@ -1,4 +1,3 @@
-use colored::Colorize;
 use std::path::Path;
 use walkdir::WalkDir;
 

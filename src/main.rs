@@ -12,7 +12,7 @@ use crate::write::{generate_toc, insert_toc};
 use clap::Parser;
 use colored::*;
 use std::fs::File;
-use std::io::{self, Read, Write};
+use std::io::{self, Write};
 use std::path::Path;
 
 fn main() -> io::Result<()> {
