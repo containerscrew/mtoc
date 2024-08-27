@@ -1,4 +1,4 @@
-repos:
+  repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.5.0
     hooks:
@@ -27,3 +27,5 @@ repos:
       - id: fmt
       # args: ['--verbose', '--']
       - id: cargo-check
+      - id: clippy
+        args: ["--", "-D", "warnings"]
