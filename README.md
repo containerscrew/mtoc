@@ -6,7 +6,6 @@
 
 
 
-
 <h1 align="center">mtoc 📄</h1>
 <p align="center">Markdown table of contents generator</p>
 
