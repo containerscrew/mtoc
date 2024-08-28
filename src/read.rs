@@ -13,11 +13,6 @@ pub fn read_markdown_file(file_path: &str) -> io::Result<String> {
         }
         Err(e) => Err(e),
     }
-
-    // let mut file = File::open(file_path)?;
-    // let mut contents = String::new();
-    // file.read_to_string(&mut contents)?;
-    // Ok(contents)
 }
 
 // Extract headers from the Markdown content
