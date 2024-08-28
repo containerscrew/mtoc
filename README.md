@@ -17,7 +17,8 @@
 - [TODO](#todo)
 - [License](#license)
 <!-- END OF TOC -->
-<p align="center" >
+
+<p>
     <img src="logo.png" alt="logo" width="250"/>
     <h3 align="center">mtoc 📄</h3>
     <p align="center">Markdown table of contents generator</p>
