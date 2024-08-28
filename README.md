@@ -18,6 +18,9 @@
 - [License](#license)
 <!-- END OF TOC -->
 
+> [!WARNING]
+> v0.1.0 is working fine unless will not respect content above the TOC. I'm working on it. Visit the [TODO](#todo) section for more information.
+
 <p align="center">
     <img src="logo.png" alt="logo" width="250"/>
     <h3 align="center">mtoc 📄</h3>
