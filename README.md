@@ -58,13 +58,13 @@ I'm very supper fan of [doctoc](https://github.com/thlorenz/doctoc) and I use it
 ## Install latest version
 
 ```shell
-XXXXX
+curl --proto '=https' --tlsv1.2 -sSfL https://raw.githubusercontent.com/containerscrew/mtoc/main/install.sh | sh
 ```
 
 ## Install specific release
 
 ```shell
-XXXXX
+curl --proto '=https' --tlsv1.2 -sSfL https://raw.githubusercontent.com/containerscrew/gitrack/main/install.sh | sh -s -- -v "v0.8.0"
 ```
 
 ## Using cargo
@@ -124,7 +124,7 @@ mtoc -d /path/to/directory
 
 1. Make your changes
 2. Run pre-commit
-3. Pipleine test and build must pass
+3. Test and build pipelines must pass
 
 ```shell
 pre-commit install
