@@ -133,6 +133,7 @@ pre-commit run -a
 # TODO
 
 * When generate the TOC, respect the content above the TOC.
+* Push the package to crates.io
 
 
 # License
