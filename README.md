@@ -45,10 +45,11 @@ I'm very supper fan of [doctoc]() and I use it a lot, but I wanted to create a s
 
 # Supported Platforms
 
-| Arch   | ARM64 | AMD64 |
-|--------|-------|-------|
-| darwin | ✅     | ✅   |
-| linux  | ✅     | ✅   |
+| Arch    | ARM64 | AMD64 |
+|---------|------|------|
+| darwin  | ✅    | ✅  |
+| linux   | ✅    | ✅  |
+| windows | ❌     | ❌   |
 
 
 # Installation
