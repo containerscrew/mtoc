@@ -7,6 +7,12 @@ All notable changes to this project will be documented in this file.
 - Update Badges
 
 
+- Update README
+
+
+- Edit pre-commit config
+
+
 ## [0.1.0] - 2024-08-28
 
 - Initial commit
