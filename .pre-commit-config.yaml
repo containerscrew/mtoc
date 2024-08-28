@@ -29,11 +29,11 @@
       - id: cargo-check
       - id: clippy
         args: ["--", "-D", "warnings"]
-  - repo: local
-    hooks:
-      - id: git-cliff
-        name: "CHANGELOG generator"
-        entry: git cliff --output CHANGELOG.md
-        language: system
-        description: "Generate a CHANGELOG.md file using git-cliff"
-        pass_filenames: false
+#  - repo: local
+#    hooks:
+#      - id: git-cliff
+#        name: "CHANGELOG generator"
+#        entry: git cliff --output CHANGELOG.md
+#        language: system
+#        description: "Generate a CHANGELOG.md file using git-cliff"
+#        pass_filenames: false
