@@ -27,7 +27,7 @@
 
 # Introduction
 
-I'm very supper fan of [doctoc](https://github.com/thlorenz/doctoc) and I use it a lot, but I wanted to create a similar tool in Rust, so I created this project.
+I'm very supper fan of [doctoc](https://github.com/thlorenz/doctoc) and I use it a lot, but I wanted to create a similar tool in Rust.
 
 # Badges
 
