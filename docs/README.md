@@ -4,7 +4,6 @@
   - [Hello!!](#hello!!)
     - [Hellooooo!!!](#hellooooo!!!)
 <!-- END OF TOC -->
-
 # Hi!
 
 ## Hello!!

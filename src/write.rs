@@ -10,7 +10,7 @@ pub fn generate_toc(headers: Vec<(usize, String)>) -> String {
         let anchor = header.to_lowercase().replace(" ", "-");
         toc.push_str(&format!("{}- [{}](#{})\n", indent, header, anchor));
     }
-    toc.push_str("<!-- END OF TOC -->\n");
+    toc.push_str("<!-- END OF TOC -->");
     toc
 }
 
