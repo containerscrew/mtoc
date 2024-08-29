@@ -19,8 +19,15 @@ pub fn read_markdown_file(file_path: &str) -> io::Result<String> {
 // TODO: add tests
 pub fn extract_headers(contents: &str) -> Vec<(usize, String)> {
     let mut headers = Vec::new();
+    let mut inside_code_block = false;
+
     for line in contents.lines() {
-        if line.starts_with('#') {
+        if line.trim_start().starts_with("```") {
+            inside_code_block = !inside_code_block;
+            continue;
+        }
+
+        if !inside_code_block && line.starts_with('#') {
             let level = line.chars().take_while(|&c| c == '#').count();
             let header = line[level..].trim().to_string();
             headers.push((level, header));
