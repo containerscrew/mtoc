@@ -22,7 +22,7 @@
 <!-- END OF TOC -->
 
 > [!WARNING]
-> v0.2.0 is working fine unless will not respect content above the TOC. I'm working on it. Visit the [TODO](#todo) section for more information.
+> v0.2.1 is working fine unless will not respect content above the TOC. I'm working on it. Visit the [TODO](#todo) section for more information.
 
 <p align="center">
     <img src="logo.png" alt="logo" width="250"/>
