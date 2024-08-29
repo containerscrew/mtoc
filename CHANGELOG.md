@@ -11,6 +11,9 @@ All notable changes to this project will be documented in this file.
 - Update README.md
 
 
+- Change CHANGELOG.md format with cliff.toml
+
+
 
 ### Changed
 
@@ -20,6 +23,9 @@ All notable changes to this project will be documented in this file.
 - Update README.md
 
 
+- Change CHANGELOG.md format with cliff.toml
+
+
 
 ### Fixed
 
@@ -27,6 +33,9 @@ All notable changes to this project will be documented in this file.
 
 
 - Update README.md
+
+
+- Change CHANGELOG.md format with cliff.toml
 
 ## [0.2.0] - 2024-08-29
 
