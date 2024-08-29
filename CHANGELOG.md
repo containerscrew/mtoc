@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.3.1] - 2024-08-29
+
+- Update CHANGELOG.md for release v0.3.0
+
+
+- Update README.md
+
+
+- Update todo.md doc
+
+
+- Fix: add always a new line of the file
+
+
+- New version v0.3.1: Fix new line after content
+
+
 ## [0.3.0] - 2024-08-29
 
 - Update CHANGELOG.md for release v0.2.1
