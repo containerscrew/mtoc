@@ -1,15 +1,8 @@
-<!-- START OF TOC !DO NOT EDIT THIS CONTENT MANUALLY-->
-**Table of Contents**  *generated with [mtoc](https://github.com/containerscrew/mtoc)*
-- [Changelog](#changelog)
-  - [[unreleased]](#[unreleased])
-  - [[0.2.0] - 2024-08-29](#[0.2.0]---2024-08-29)
-  - [[0.1.0] - 2024-08-28](#[0.1.0]---2024-08-28)
-<!-- END OF TOC -->
 # Changelog
 
 All notable changes to this project will be documented in this file.
 
-## [unreleased]
+## [0.2.1] - 2024-08-29
 
 - Update CHANGELOG.md for release v0.2.0
 
@@ -21,6 +14,15 @@ All notable changes to this project will be documented in this file.
 
 
 - Update CHANGELOG.md
+
+
+- Rollback CHANGELOG.md format with cliff.toml
+
+
+- Change file processor. Ignore code inside a block
+
+
+- Update Cargo package
 
 
 ## [0.2.0] - 2024-08-29
