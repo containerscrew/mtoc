@@ -1,3 +1,10 @@
+<p align="center">
+    <img src="logo.png" alt="logo" width="250"/>
+    <h3 align="center">mtoc 📄</h3>
+    <p align="center">Markdown table of contents generator</p>
+    <p align="center">Built with ❤ in Rust</p>
+</p>
+
 <!-- START OF TOC !DO NOT EDIT THIS CONTENT MANUALLY-->
 **Table of Contents**  *generated with [mtoc](https://github.com/containerscrew/mtoc)*
 - [Introduction](#introduction)
@@ -20,12 +27,6 @@
 - [IN PROGRESS](#in-progress)
 - [License](#license)
 <!-- END OF TOC -->
-<p align="center">
-    <img src="logo.png" alt="logo" width="250"/>
-    <h3 align="center">mtoc 📄</h3>
-    <p align="center">Markdown table of contents generator</p>
-    <p align="center">Built with ❤ in Rust</p>
-</p>
 
 # Introduction
 
