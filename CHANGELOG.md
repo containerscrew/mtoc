@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.3.0] - 2024-08-29
+
+- Update CHANGELOG.md for release v0.2.1
+
+
+- Feature: do not remove content above TOC
+
+
 ## [0.2.1] - 2024-08-29
 
 - Update CHANGELOG.md for release v0.2.0
