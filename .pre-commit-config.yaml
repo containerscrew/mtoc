@@ -14,9 +14,10 @@
     hooks:
       - id: gitleaks
 #  - repo: https://github.com/containerscrew/mtoc
-#    rev: ### pending to add
+#    rev: v0.2.0
 #    hooks:
 #      - id: mtoc
+#        args: ["-e", "./target"]
   - repo: https://github.com/pre-commit/pre-commit
     rev: v3.5.0
     hooks:

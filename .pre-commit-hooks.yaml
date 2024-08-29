@@ -1,5 +1,5 @@
 -   id: mtoc
     name: mtoc
     language: rust
-    entry: mtop
+    entry: mtoc
     types: [markdown]

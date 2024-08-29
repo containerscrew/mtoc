@@ -22,7 +22,7 @@ pub struct Args {
     #[arg(
         short = 'e',
         long = "exclude-dir",
-        help = "Exclude directories to scan",
+        help = "Exclude directories from search",
         value_delimiter = ' ',
         num_args = 1..,
         required = false

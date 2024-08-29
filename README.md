@@ -1,6 +1,9 @@
 <!-- START OF TOC !DO NOT EDIT THIS CONTENT MANUALLY-->
 **Table of Contents**  *generated with [mtoc](https://github.com/containerscrew/mtoc)*
 - [Introduction](#introduction)
+- [Hello](#hello)
+  - [World](#world)
+    - [How are you?](#how-are-you?)
 - [Badges](#badges)
 - [Supported Platforms](#supported-platforms)
 - [Installation](#installation)
@@ -12,6 +15,10 @@
   - [Help](#help)
   - [Generate TOC](#generate-toc)
   - [Generate TOC for a specific directory](#generate-toc-for-a-specific-directory)
+  - [Exclude directories from search](#exclude-directories-from-search)
+  - [Generate TOC for a specific file](#generate-toc-for-a-specific-file)
+- [Using pre-commit](#using-pre-commit)
+- [Example](#example)
 - [Local development](#local-development)
 - [Or run once](#or-run-once)
 - [TODO](#todo)
@@ -19,7 +26,7 @@
 <!-- END OF TOC -->
 
 > [!WARNING]
-> v0.1.0 is working fine unless will not respect content above the TOC. I'm working on it. Visit the [TODO](#todo) section for more information.
+> v0.2.0 is working fine unless will not respect content above the TOC. I'm working on it. Visit the [TODO](#todo) section for more information.
 
 <p align="center">
     <img src="logo.png" alt="logo" width="250"/>
@@ -31,6 +38,19 @@
 # Introduction
 
 I'm very supper fan of [doctoc](https://github.com/thlorenz/doctoc) and I use it a lot, but I wanted to create a similar tool in Rust.
+
+**From this:**
+
+```markdown
+# Hello
+## World
+### How are you?
+```
+
+**To this:**
+
+```markdown
+```
 
 # Badges
 
@@ -96,25 +116,29 @@ cargo uninstall mtoc
 
 # Usage
 
+By default, the command will search for markdown files in the current directory and generate the table of contents for each file. But, you can specify a directory to search for markdown files, specify only a specific file, or exclude directories from the search.
+
 ## Help
 
 ```bash
-mtoc --help
+$ mtoc --help
 
 Git markdown table of contents generator.
 
 Usage: mtoc [OPTIONS]
 
 Options:
-  -d, --directory <DIRECTORY>  Directory to search for markdown files [default: .]
-  -h, --help                   Print help
-  -V, --version                Print version
+  -d, --directory <DIRECTORY>     Directory to search for markdown files [default: .]
+  -e, --exclude-dir <EXCLUDE>...  Exclude directories from search
+  -f, --file <FILE>...            Only generate TOC for the specified file(s)
+  -h, --help                      Print help
+  -V, --version                   Print version
 ```
 
 ## Generate TOC
 
 ```bash
-mtoc # default the current dir where the command is run
+mtoc # default the current dir where the command is executed. All the files, all the directories will be scanned.
 ```
 
 ## Generate TOC for a specific directory
@@ -123,25 +147,57 @@ mtoc # default the current dir where the command is run
 mtoc -d /path/to/directory
 ```
 
+## Exclude directories from search
+
+```bash
+mtoc -e ".target/" -e "node_modules/"
+```
+
+## Generate TOC for a specific file
+
+```bash
+mtoc -f README.md
+```
+
+# Using pre-commit
+
+Add this configuration to your `.pre-commit-config.yaml`
+
+```yaml
+- repo: https://github.com/containerscrew/mtoc
+  rev: ...  # substitute a tagged version
+  hooks:
+    - id: mtoc
+      args: ["-e", "./target"]
+```
+
+> Always stay up to date with the latest changes in the project markdown files.
+
+# Example
+
+```bash
+$ mtoc -e ".target/"                                                                                                                                                                                                                                         🦀 v1.80.1
+Excluding directories  [".target/"]
+Updated markdown file  ./docs/test.md
+Updated markdown file  ./CHANGELOG.md
+Updated markdown file  ./README.md
+```
+
 # Local development
 
 1. Make your changes
 2. Run pre-commit
 3. Test and build pipelines must pass
 
-```shell
-pre-commit install
+```bash
+$ pre-commit install
 # Or run once
-pre-commit run -a
+$ pre-commit run -a
 ```
 
 # TODO
 
 * When generate the TOC, respect the content above the TOC.
-* Push the package to crates.io
-* Generate the TOC for a specific file
-* Exclude specific directories
-* Exclude CHANGELOG.md always
 * Push to homebrew
 
 # License
