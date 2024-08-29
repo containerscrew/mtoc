@@ -5,3 +5,4 @@
 # TODO
 
 - Push to homebrew or other package managers.
+- Testing + review coverage.
