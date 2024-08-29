@@ -140,6 +140,8 @@ pre-commit run -a
 
 * When generate the TOC, respect the content above the TOC.
 * Push the package to crates.io
+* Generate the TOC for a specific file
+* Exclude specific directories
 
 # License
 
