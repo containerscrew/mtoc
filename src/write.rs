@@ -15,15 +15,8 @@ pub fn generate_toc(headers: Vec<(usize, String)>) -> String {
 }
 
 // Insert the TOC at the beginning of the file content
-pub fn insert_toc(original_content: &str, toc: &str) -> String {
-    let mut new_content = String::new();
-
-    // Insert the new TOC
-    new_content.push_str(toc);
-    new_content.push('\n');
-
-    // Add the remaining content
-    new_content.push_str(original_content);
-
-    new_content
+pub fn insert_toc(content: &str, toc: &str, index: usize) -> String {
+    let mut lines: Vec<&str> = content.lines().collect();
+    lines.insert(index, toc);
+    lines.join("\n")
 }

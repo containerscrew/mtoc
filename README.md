@@ -17,13 +17,9 @@
 - [Using pre-commit](#using-pre-commit)
 - [Example](#example)
 - [Local development](#local-development)
-- [TODO](#todo)
+- [IN PROGRESS](#in-progress)
 - [License](#license)
 <!-- END OF TOC -->
-
-> [!WARNING]
-> v0.2.1 is working fine unless will not respect content above the TOC. I'm working on it. Visit the [TODO](#todo) section for more information.
-
 <p align="center">
     <img src="logo.png" alt="logo" width="250"/>
     <h3 align="center">mtoc 📄</h3>
@@ -197,12 +193,10 @@ $ pre-commit install
 $ pre-commit run -a
 ```
 
-# TODO
+# IN PROGRESS
 
-* When generate the TOC, respect the content above the TOC.
-* Push to homebrew or other package managers.
-* When the toc is inside a code block, do not generate the TOC.
+[IN PROGRESS](./docs/todo.md)
 
 # License
 
-[License](./LICENSE)
+`mtoc` is distributed under the terms of the [`GNU AFFERO GENERAL PUBLIC LICENSE`](./LICENSE).

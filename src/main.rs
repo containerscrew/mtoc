@@ -46,10 +46,10 @@ fn main() -> io::Result<()> {
         let toc = generate_toc(headers);
 
         // Remove any existing TOC from the original content
-        let content_without_toc = remove_existing_toc(&contents);
+        let (content_without_toc, toc_start_index) = remove_existing_toc(&contents);
 
         // Insert the new TOC at the beginning of the content
-        let updated_content = insert_toc(&content_without_toc, &toc);
+        let updated_content = insert_toc(&content_without_toc, &toc, toc_start_index);
 
         // Write the updated content back to the file
         let mut file = File::create(markdown_file.as_str())?;
