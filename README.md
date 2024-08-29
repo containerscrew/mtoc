@@ -201,7 +201,8 @@ $ pre-commit run -a
 # TODO
 
 * When generate the TOC, respect the content above the TOC.
-* Push to homebrew
+* Push to homebrew or other package managers.
+* When the toc is inside a code block, do not generate the TOC.
 
 # License
 
