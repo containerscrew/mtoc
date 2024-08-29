@@ -1,9 +1,6 @@
 <!-- START OF TOC !DO NOT EDIT THIS CONTENT MANUALLY-->
 **Table of Contents**  *generated with [mtoc](https://github.com/containerscrew/mtoc)*
 - [Introduction](#introduction)
-- [Hello](#hello)
-  - [World](#world)
-    - [How are you?](#how-are-you?)
 - [Badges](#badges)
 - [Supported Platforms](#supported-platforms)
 - [Installation](#installation)
@@ -50,6 +47,12 @@ I'm very supper fan of [doctoc](https://github.com/thlorenz/doctoc) and I use it
 **To this:**
 
 ```markdown
+<!-- START OF TOC !DO NOT EDIT THIS CONTENT MANUALLY-->
+**Table of Contents**  *generated with [mtoc](https://github.com/containerscrew/mtoc)*
+- [Hello](#hello)
+  - [World](#world)
+    - [How are you?](#how-are-you?)
+<!-- END OF TOC -->
 ```
 
 # Badges
