@@ -4,9 +4,9 @@
 - [Badges](#badges)
 - [Supported Platforms](#supported-platforms)
 - [Installation](#installation)
-  - [Install latest version](#install-latest-version)
-  - [Install specific release](#install-specific-release)
-  - [Using cargo](#using-cargo)
+  - [Install latest binary version](#install-latest-binary-version)
+  - [Install specific binary version](#install-specific-binary-version)
+  - [Install using cargo](#install-using-cargo)
 - [Uninstall](#uninstall)
 - [Usage](#usage)
   - [Help](#help)
@@ -37,6 +37,7 @@ I'm very supper fan of [doctoc](https://github.com/thlorenz/doctoc) and I use it
 |               |                                                                                                                                                                                                                                                 |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Language      | ![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)                                                                                                                                          |
+| Crates        | ![Crates.io Version](https://img.shields.io/crates/v/mtoc)                                                                                                                                                                                      |
 | Release       | [![Release](https://img.shields.io/github/release/containerscrew/mtoc)](https://github.com/containerscrew/mtoc/releases/latest)                                                                                                                 |
 | Code          | ![Code Size](https://img.shields.io/github/languages/code-size/containerscrew/mtoc)                                                                                                                                                             |
 | CI - Build    | [![Build](https://github.com/containerscrew/mtoc/actions/workflows/build.yml/badge.svg)](https://github.com/containerscrew/mtoc/actions/workflows/build.yml)                                                                                    |
@@ -59,31 +60,29 @@ I'm very supper fan of [doctoc](https://github.com/thlorenz/doctoc) and I use it
 
 # Installation
 
-## Install latest version
+## Install latest binary version
 
 ```shell
 curl --proto '=https' --tlsv1.2 -sSfL https://raw.githubusercontent.com/containerscrew/mtoc/main/install.sh | sh
 ```
 
-## Install specific release
+## Install specific binary version
 
 ```shell
 curl --proto '=https' --tlsv1.2 -sSfL https://raw.githubusercontent.com/containerscrew/gitrack/main/install.sh | sh -s -- -v "v0.8.0"
 ```
 
-## Using cargo
+## Install using cargo
 
 * **[Install Cargo](https://rustup.rs/)**
 
-Open a terminal and run:
-
 ```shell
-git clone https://github.com/containerscrew/mtoc
-cd mtoc
-make install
+cargo install mtoc
 ```
 
 # Uninstall
+
+Binary:
 
 ```bash
 sudo rm /usr/local/bin/mtoc
@@ -92,7 +91,7 @@ sudo rm /usr/local/bin/mtoc
 With cargo:
 
 ```shell
-make uninstall
+cargo uninstall mtoc
 ```
 
 # Usage
@@ -142,6 +141,8 @@ pre-commit run -a
 * Push the package to crates.io
 * Generate the TOC for a specific file
 * Exclude specific directories
+* Exclude CHANGELOG.md always
+* Push to homebrew
 
 # License
 
