@@ -33,3 +33,12 @@ cargo-fix: ## Run cargo fix
 
 mtoc: ## Create table of contents with doctoc
 	mtoc -d .
+
+cargo-login: ## Login to cargo
+	cargo login
+
+cargo-publish-dr: ## Publish to cargo
+	cargo publish --dry-run
+
+cargo-publish: ## Publish to cargo
+	cargo publish
