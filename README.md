@@ -17,7 +17,6 @@
 - [Using pre-commit](#using-pre-commit)
 - [Example](#example)
 - [Local development](#local-development)
-- [Or run once](#or-run-once)
 - [TODO](#todo)
 - [License](#license)
 <!-- END OF TOC -->
