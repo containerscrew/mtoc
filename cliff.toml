@@ -1,18 +1,30 @@
 [changelog]
 header = """
-# Changelog\n
-All notable changes to this project will be documented in this file.\n
+# Changelog
+All notable changes to this project will be documented in this file.
 """
 
 body = """
 {% if version %}\
-    ## [{{ version | trim_start_matches(pat="v") }}] - {{ timestamp | date(format="%Y-%m-%d") }}
+## [{{ version | trim_start_matches(pat="v") }}] - {{ timestamp | date(format="%Y-%m-%d") }}
 {% else %}\
-    ## [unreleased]
-{% endif %}\
-{% for commit in commits | unique(attribute="message") %}
-    - {{ commit.message | upper_first }}
-{% endfor %}\n
+## [Unreleased]
+{% endif %}
+
+### Added
+{% for commit in commits | filter(attribute="message", pattern="^add|^feat") | unique(attribute="message") %}
+- {{ commit.message | upper_first }}
+{% endfor %}
+
+### Changed
+{% for commit in commits | filter(attribute="message", pattern="^change|^update|^refactor") | unique(attribute="message") %}
+- {{ commit.message | upper_first }}
+{% endfor %}
+
+### Fixed
+{% for commit in commits | filter(attribute="message", pattern="^fix|^bug") | unique(attribute="message") %}
+- {{ commit.message | upper_first }}
+{% endfor %}
 """
 
 footer = """
