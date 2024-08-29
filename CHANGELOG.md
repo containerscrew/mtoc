@@ -1,14 +1,8 @@
-<!-- START OF TOC !DO NOT EDIT THIS CONTENT MANUALLY-->
-**Table of Contents**  *generated with [mtoc](https://github.com/containerscrew/mtoc)*
-- [Changelog](#changelog)
-  - [[unreleased]](#[unreleased])
-  - [[0.1.0] - 2024-08-28](#[0.1.0]---2024-08-28)
-<!-- END OF TOC -->
 # Changelog
 
 All notable changes to this project will be documented in this file.
 
-## [unreleased]
+## [0.2.0] - 2024-08-29
 
 - Update Badges
 
@@ -17,6 +11,39 @@ All notable changes to this project will be documented in this file.
 
 
 - Edit pre-commit config
+
+
+- Update CHANGELOG.md for release v0.1.0
+
+
+- Update pipelienes path
+
+
+- Update codecov action
+
+
+- Update Cargo.toml
+
+
+- Add description
+
+
+- Update Makefile
+
+
+- [New patch version] - Update doc for crates.io
+
+
+- Update Cargo.lock
+
+
+- Allow specify a file & ignore directories
+
+
+- Update pre-commit config/hooks & Update README
+
+
+- Upgrade app version
 
 
 ## [0.1.0] - 2024-08-28
