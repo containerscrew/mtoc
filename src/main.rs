@@ -19,8 +19,23 @@ fn main() -> io::Result<()> {
     // Parse command-line arguments
     let args = Args::parse();
 
-    // Find markdown files in all the repo
-    let markdown_files = find_markdown_files(Path::new(&args.directory));
+    // Exclude directories to scan
+    let exclude_dirs = args.exclude.as_deref().unwrap_or(&[]);
+    if !exclude_dirs.is_empty() {
+        eprintln!(
+            "{} {:?}",
+            "Excluding directories ".bright_red(),
+            exclude_dirs
+        );
+    }
+
+    // Only generate TOC for the specified file(s)
+    let markdown_files = if let Some(files) = args.file.as_deref() {
+        files.to_vec()
+    } else {
+        // Find markdown files in the given directory
+        find_markdown_files(Path::new(&args.directory), exclude_dirs)
+    };
 
     for markdown_file in &markdown_files {
         // Read the original file content

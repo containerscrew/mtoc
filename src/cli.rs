@@ -18,4 +18,24 @@ pub struct Args {
         required = false
     )]
     pub directory: String,
+
+    #[arg(
+        short = 'e',
+        long = "exclude-dir",
+        help = "Exclude directories to scan",
+        value_delimiter = ' ',
+        num_args = 1..,
+        required = false
+    )]
+    pub exclude: Option<Vec<String>>,
+
+    #[arg(
+        short = 'f',
+        long = "file",
+        help = "Only generate TOC for the specified file(s)",
+        value_delimiter = ' ',
+        num_args = 1..,
+        required = false
+    )]
+    pub file: Option<Vec<String>>,
 }
