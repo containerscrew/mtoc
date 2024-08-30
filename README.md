@@ -162,11 +162,11 @@ mtoc -f README.md
 Add this configuration to your `.pre-commit-config.yaml`
 
 ```yaml
-- repo: https://github.com/containerscrew/mtoc
-  rev: ...  # substitute a tagged version
-  hooks:
-    - id: mtoc
-      args: ["-e", "./target"]
+  - repo: https://github.com/containerscrew/mtoc
+    rev: v.0.3.2 # use the most recent tag
+    hooks:
+      - id: mtoc
+        args: [ "-e", ".target/" ]
 ```
 
 > Always stay up to date with the latest changes in the project markdown files.
