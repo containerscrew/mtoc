@@ -1,5 +1,7 @@
 -   id: mtoc
-    name: mtoc
+    name: Generate table of contents for markdown files
     language: rust
+    description: Generate table of contents for markdown files using mtoc
     entry: mtoc
     types: [markdown]
+    pass_filenames: false
