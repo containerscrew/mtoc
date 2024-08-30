@@ -65,7 +65,6 @@ I'm very supper fan of [doctoc](https://github.com/thlorenz/doctoc) and I use it
 | CI - Coverage | [![Build](https://github.com/containerscrew/mtoc/actions/workflows/coverage.yml/badge.svg)](https://github.com/containerscrew/mtoc/actions/workflows/coverage.yml)                                                                              |
 | Meta          | [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit) [![License - MIT](https://img.shields.io/github/license/containerscrew/mtoc)](/LICENSE) |
 | Codecov       | [![codecov](https://codecov.io/github/containerscrew/mtoc/graph/badge.svg?token=UTTEOR9BUO)](https://codecov.io/github/containerscrew/mtoc)                                                                                                     |
-| Downloads     | [![Downloads](https://img.shields.io/github/downloads/containerscrew/mtoc/total.svg?logo=github)](https://somsubhra.github.io/github-release-stats/?username=containerscrew&repository=mtoc)                                                    |
 
 
 # Supported Platforms
