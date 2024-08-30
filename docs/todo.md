@@ -4,5 +4,5 @@
 <!-- END OF TOC -->
 # TODO
 
-- Push to homebrew or other package managers.
+- Push to homebrew or other package managers (AUR + snapcraft).
 - Testing + review coverage.
