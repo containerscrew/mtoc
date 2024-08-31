@@ -163,7 +163,7 @@ Add this configuration to your `.pre-commit-config.yaml`
 
 ```yaml
   - repo: https://github.com/containerscrew/mtoc
-    rev: v.0.3.2 # use the most recent tag
+    rev: v0.3.2 # use the most recent tag
     hooks:
       - id: mtoc
         args: [ "-e", ".target/" ]
