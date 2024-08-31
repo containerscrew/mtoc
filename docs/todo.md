@@ -6,3 +6,4 @@
 
 - Push to homebrew or other package managers (AUR + snapcraft).
 - Testing + review coverage.
+- Fix links when headers contains `:`
