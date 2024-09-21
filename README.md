@@ -99,6 +99,8 @@ curl --proto '=https' --tlsv1.2 -sSfL https://raw.githubusercontent.com/containe
 cargo install mtoc
 ```
 
+> If you want to update the tool to a new version, just the run the same command `cargo install mtoc`.
+
 # Uninstall
 
 Binary:
