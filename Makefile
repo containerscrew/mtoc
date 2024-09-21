@@ -37,7 +37,7 @@ mtoc: ## Create table of contents with doctoc
 cargo-login: ## Login to cargo
 	cargo login
 
-cargo-publish-dr: ## Publish to cargo
+cargo-publish-dr: ## Publish to cargo (dry-run)
 	cargo publish --dry-run
 
 cargo-publish: ## Publish to cargo
