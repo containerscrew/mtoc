@@ -75,6 +75,7 @@ I'm very supper fan of [doctoc](https://github.com/thlorenz/doctoc) and I use it
 | linux   | ✅    | ✅  |
 | windows | ❌     | ❌   |
 
+> Maybe in windows systems this tool will work, but has not been tested
 
 # Installation
 
