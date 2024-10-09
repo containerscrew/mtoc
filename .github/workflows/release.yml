@@ -80,6 +80,10 @@ jobs:
           generate_release_notes: true
           append_body: true
 
+      - uses: katyo/publish-crates@v2
+        with:
+          registry-token: ${{ secrets.CARGO_REGISTRY_TOKEN }}
+
   changelog:
     name: Generate CHANGELOG
     needs:

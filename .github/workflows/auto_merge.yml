@@ -22,5 +22,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.ACTIONS_TOKEN }}
         with:
           merge-method: squash
-          commit-message: "Auto-merged PR"
-          title: "^Bump clap from .*$"
+        #   commit-message: "Auto-merged PR"
+        #   title: "^Bump clap from .*$"
