@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 
 ## [unreleased]
 
-- Fix links with special characters
+- Update CHANGELOG.md for release v0.4.1
 
 ## [0.4.1] - 2024-10-09
 
