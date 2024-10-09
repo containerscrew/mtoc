@@ -6,4 +6,4 @@
 
 - Push to homebrew or other package managers (AUR + snapcraft).
 - Testing + review coverage.
-- Fix links when headers contains `:`
+- ~~Fix links when headers contains `:`~~ Fixed in version v0.4.1
