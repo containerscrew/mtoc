@@ -5,6 +5,7 @@ DO NOT REMOVE THIS!
 - [Test 1](#test-1)
   - [Test 2](#test-2)
     - [Test 3](#test-3)
+      - [Test: testing testing](#test:-testing-testing)
 <!-- END OF TOC -->
 
 # Test 1
@@ -12,6 +13,9 @@ DO NOT REMOVE THIS!
 ## Test 2
 
 ### Test 3
+
+#### Test: testing testing
+
 
 ```markdown
 # Hello
