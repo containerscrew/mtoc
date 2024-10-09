@@ -53,6 +53,11 @@ jobs:
         run: |
           sudo apt-get -qq install musl-dev musl-tools pkg-config make
 
+      - name: Publish to creates.io
+        uses: katyo/publish-crates@v2
+        with:
+          registry-token: ${{ secrets.CARGO_REGISTRY_TOKEN }}
+
       - name: Build binary
         uses: houseabsolute/actions-rust-cross@v0
         with:
@@ -79,10 +84,6 @@ jobs:
           token: ${{ secrets.CI_TOKEN }}
           generate_release_notes: true
           append_body: true
-
-      - uses: katyo/publish-crates@v2
-        with:
-          registry-token: ${{ secrets.CARGO_REGISTRY_TOKEN }}
 
   changelog:
     name: Generate CHANGELOG
