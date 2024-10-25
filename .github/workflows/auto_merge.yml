@@ -23,5 +23,3 @@ jobs:
         with:
           MERGE_METHOD: "squash"
           LOG: "TRACE"
-        #   commit-message: "Auto-merged PR"
-        #   title: "^Bump clap from .*$"
