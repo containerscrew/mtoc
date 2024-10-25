@@ -2,11 +2,11 @@ name: Auto Merge Dependabot PRs
 on:
   schedule:
     - cron: "*/5 * * * *" # every 5 minutes
-  pull_request:
-    types:
-      - opened
-      - synchronize
-      - reopened
+#  pull_request:
+#    types:
+#      - opened
+#      - synchronize
+#      - reopened
 
 jobs:
   auto-merge:
