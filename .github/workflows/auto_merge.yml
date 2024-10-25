@@ -19,8 +19,9 @@ jobs:
       - name: Auto-merge PR if it bumps the clap dependency
         uses: pascalgn/automerge-action@v0.15.4
         env:
-          GITHUB_TOKEN: ${{ secrets.ACTIONS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.CI_TOKEN }}
         with:
-          merge-method: squash
+          MERGE_METHOD: "squash"
+          LOG: "TRACE"
         #   commit-message: "Auto-merged PR"
         #   title: "^Bump clap from .*$"
