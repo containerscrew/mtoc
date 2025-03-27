@@ -3,7 +3,10 @@ use walkdir::{DirEntry, WalkDir};
 
 // Check if a directory should be excluded
 fn is_excluded_dir(entry: &DirEntry, exclude_dirs: &[String]) -> bool {
-    exclude_dirs.iter().any(|dir| entry.path().starts_with(dir))
+    let path = entry.path(); 
+    exclude_dirs
+        .iter()
+        .any(|exclude| path.to_string_lossy().contains(exclude))
 }
 
 // Find markdown files in the given directory
