@@ -30,8 +30,6 @@
 
 # Introduction
 
-I'm very supper fan of [doctoc](https://github.com/thlorenz/doctoc) and I use it a lot, but I wanted to create a similar tool in Rust.
-
 **From this:**
 
 ```markdown
@@ -152,7 +150,7 @@ mtoc -d /path/to/directory
 ## Exclude directories from search
 
 ```bash
-mtoc -e ".target/" -e "node_modules/"
+mtoc -e ".target/" -e ".node_modules/"
 ```
 
 ## Generate TOC for a specific file
@@ -167,7 +165,7 @@ Add this configuration to your `.pre-commit-config.yaml`
 
 ```yaml
   - repo: https://github.com/containerscrew/mtoc
-    rev: v0.3.2 # use the most recent tag
+    rev: v0.5.0 # use the most recent tag
     hooks:
       - id: mtoc
         args: [ "-e", ".target/" ]

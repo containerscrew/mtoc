@@ -8,7 +8,6 @@ use clap::Parser;
     about = "Git markdown table of contents generator. ",
     arg_required_else_help = false
 )]
-
 pub struct Args {
     #[arg(
         short = 'd',
