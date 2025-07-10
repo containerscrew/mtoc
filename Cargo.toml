@@ -9,7 +9,7 @@ license-file = "LICENSE"
 description = "Generate a table of contents for markdown files"
 
 [dependencies]
-clap = { version = "4.5.40", features = ["derive"] }
+clap = { version = "4.5.41", features = ["derive"] }
 tempfile = "3.20.0"
 colored = "3.0.0"
 walkdir = "2.5.0"
